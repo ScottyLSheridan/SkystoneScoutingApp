@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="1000dp"
+    android:layout_marginBottom="56dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".Fragments.EditActivity"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <include
+                layout="@layout/toolbar_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="@string/details"
+                android:textColor="@color/colorAccent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <EditText
+                android:id="@+id/tournament"
+                android:textColor="@color/colorAccent"
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:textSize="25sp"
+                android:hint="@string/tournament_name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:shadowColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:backgroundTint="@color/colorAccent"
+                tools:targetApi="lollipop"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:id="@+id/match_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:textSize="25sp"
+                android:hint="@string/match_number"
+                android:inputType="number"
+                android:shadowColor="@color/colorAccent"
+                tools:targetApi="lollipop"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:id="@+id/team_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:textSize="25sp"
+                android:hint="@string/team_number"
+                android:inputType="number"
+                android:shadowColor="@color/colorAccent"
+                tools:targetApi="lollipop"
+                tools:ignore="Autofill" />
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:id="@+id/auto_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/auto"
+                android:textSize="25sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/auto_move_foundation"
+                android:textColor="@color/colorAccent"
+                android:text="@string/foundation_moved"
+                android:textSize="25sp"
+                android:buttonTint="@color/colorAccent"
+                tools:targetApi="p" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:id="@+id/auto_sky_stones_moved"
+                android:hint="@string/delivered_skystones"
+                android:textColorHint="@color/colorAccent"
+                android:backgroundTint="@color/colorAccent"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:id="@+id/auto_stones_moved"
+                android:hint="@string/delivered_stones"
+                android:textColorHint="@color/colorAccent"
+                android:backgroundTint="@color/colorAccent"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/auto_foundation_stones"
+                android:hint="@string/stones_on_foundation"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="25sp"
+                android:backgroundTint="@color/colorAccent"
+                android:inputType="number" />
+
+            <CheckBox
+                android:id="@+id/auto_park"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/park"
+                android:textSize="25sp"
+                android:textColor="@color/colorAccent"
+                android:buttonTint="@color/colorAccent" />
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:id="@+id/tele_op_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="@string/teleop"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <EditText
+                android:id="@+id/tele_stones_moved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/delivered_stones"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="25sp"
+                android:backgroundTint="@color/colorAccent"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:id="@+id/tele_foundation_stones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/stones_on_foundation"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="25sp"
+                android:backgroundTint="@color/colorAccent"
+                android:inputType="number"
+                />
+
+            <EditText
+                android:id="@+id/tele_skyscraper_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/skyscraper_height"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="25sp"
+                android:backgroundTint="@color/colorAccent"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:id="@+id/end_game_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="@string/endgame"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+            <CheckBox
+                android:id="@+id/capped"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="@string/capped"
+                android:textColor="@color/colorAccent"
+                android:buttonTint="@color/colorAccent"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/end_capping_height"
+                android:hint="@string/capping_height"
+                android:textColorHint="@color/colorAccent"
+                android:backgroundTint="@color/colorAccent"
+                android:textSize="25sp"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/end_move_foundation"
+                android:textColor="@color/colorAccent"
+                android:text="@string/foundation_moved"
+                android:textSize="25sp"
+                android:buttonTint="@color/colorAccent"
+                />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/end_park"
+                android:textSize="25sp"
+                android:text="@string/park"
+                android:textColor="@color/colorAccent"
+                android:buttonTint="@color/colorAccent"
+                />
+
+            <Button
+                android:id="@+id/update"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="UPDATE"
+                android:textColor="@color/colorPrimary"
+                android:textSize="29sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="300sp"
+                android:text=""/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

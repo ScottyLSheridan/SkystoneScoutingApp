@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "772127188769",
+    "firebase_url": "https://scoutingapp-android.firebaseio.com",
+    "project_id": "scoutingapp-android",
+    "storage_bucket": "scoutingapp-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772127188769:android:ac76641c29db2fb7",
+        "android_client_info": {
+          "package_name": "archishmaan.com.scoutingappv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772127188769-dvbp0cpvd15gav3n959v9s3r19t1k582.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "archishmaan.com.scoutingappv2",
+            "certificate_hash": "8d8e0f29a29cc1fc27b22681ebcaf0bae9503860"
+          }
+        },
+        {
+          "client_id": "772127188769-8gflsiaqdn0gc6ca6cjasa8ii4s8thjk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFsJa5dZw51ggVy7sZbgn4-7VxWbViEpE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772127188769-8gflsiaqdn0gc6ca6cjasa8ii4s8thjk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

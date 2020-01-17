@@ -1,6 +1,29 @@
-<resources>
-    <string name="app_name">SkystoneScoutingApp</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Scouting App Skystone</string>
+    <string name="title_scout" tools:ignore="ExtraTranslation">Scouting</string>
+    <string name="title_data">Data</string>
+    <string name="title_analyze">Analyze</string>
+    <string name="export">Export</string>
+    <string name="stash">STASH</string>
+    <string name="update">UPDATE</string>
+    <string name="details">Details:</string>
+    <string name="match_number">Match Number</string>
+    <string name="team_number">Team Number</string>
+    <string name="auto">Auto:</string>
+    <string name="teleop">Teleop:</string>
+    <string name="endgame">Endgame</string>
+    <string name="tournament_name">Tournament Name</string>
+    <string name="delete">Delete</string>
+    <string name="delete_button">Delete</string>
+    <string name="export_button">Export</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="foundation_moved">Foundation moved</string>
+    <string name="delivered_skystones">Delivered Skystones</string>
+    <string name="delivered_stones">Delivered Stones</string>
+    <string name="stones_on_foundation">Stones on Foundation</string>
+    <string name="park">Park</string>
+    <string name="skyscraper_height">Skyscraper Height</string>
+    <string name="capped">Capped</string>
+    <string name="capping_height">Capping Height</string>
 </resources>
